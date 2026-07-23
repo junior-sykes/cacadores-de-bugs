@@ -3,30 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Caçadores de Bugs e Erros | Curadoria de Ofertas, Cupons e Erros de Preço</title>
+    <meta name="description" content="Curadoria diária das melhores ofertas, cupons de desconto verificados e erros de preço em Tecnologia, Bebê e Beleza nas maiores lojas do Brasil.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo ao Meu Site</h1>
-        <p>Esta página está hospedada e online através do GitHub Pages.</p>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-banner">
+        <span class="pulse-dot"></span>
+        <span>ALERTAS EM TEMPO REAL: Curadoria diária ativada para @cacadores.de.bugs.e.erros!</span>
     </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-group">
+                <a href="index.html" class="brand-logo">
+                    🐞 Caçadores de <span class="highlight">Bugs e Erros</span>
+                </a>
+                <span class="brand-handle">@cacadores.de.bugs.e.erros</span>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#ofertas" class="nav-link">Vitrine de Ofertas</a></li>
+                    <li><a href="#alertas" class="nav-link btn-nav-cta">Receber Alertas VIP</a></li>
+                    <li><a href="politica-de-privacidade.html" class="nav-link">Política de Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-badge">
+                <span>⚡ Erros de Preço e Cupons Exclusivos</span>
+            </div>
+            <h1 class="hero-title">
+                Economize de Verdade com Nossos <br><span>Caçadores de Bugs e Erros</span>
+            </h1>
+            <p class="hero-subtitle">
+                Acompanhamos 24h por dia as maiores lojas do e-commerce brasileiro (Amazon, Shopee e Mercado Livre) para trazer cupons verificados, descontos imperdíveis e falhas de preço antes que acabem!
+            </p>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#ofertas" class="btn-deal-cta" style="width: auto; padding: 0.85rem 1.75rem; font-size: 1.05rem;">
+                    🔍 Ver Ofertas do Dia
+                </a>
+                <a href="#alertas" class="btn-nav-cta" style="padding: 0.85rem 1.75rem; font-size: 1.05rem; background-color: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);">
+                    📲 Entrar no Grupo VIP
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">+100k</span>
+                    <span class="stat-label">Membros Satisfeitos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Lojas Oficiais Verificadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Monitoramento Ativo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Highlights Section -->
+    <section class="categories-section" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Curadoria Especializada</span>
+                <h2 class="section-title">Categorias Autorizadas & Focadas</h2>
+                <p class="section-description">
+                    Nossa equipe e algoritmos focam rigorosamente nos segmentos com maior índice de descontos reais.
+                </p>
+            </div>
+
+            <!-- Interactive Category Cards -->
+            <div class="category-badges-grid">
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <div class="category-info">
+                        <h3>Tecnologia & Eletrônicos</h3>
+                        <p>Smartphones, fones TWS, smartwatches, periféricos gamer, notebooks e gadgets com preço de bug.</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">👶</div>
+                    <div class="category-info">
+                        <h3>Bebê & Maternidade</h3>
+                        <p>Fraldas em promoção, carrinhos, cadeirinhas, mamadeiras e itens essenciais para os pequenos.</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">✨</div>
+                    <div class="category-info">
+                        <h3>Beleza & Cuidados Pessoais</h3>
+                        <p>Skincare, perfumes importados, maquiagens e produtos para cabelo com cupons acumulativos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Showcase Section -->
+    <section class="deals-section" id="ofertas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Vitrine em Destaque</span>
+                <h2 class="section-title">Ofertas do Dia e Erros de Preço</h2>
+                <p class="section-description">Selecione uma categoria para filtrar ou navegue pelas melhores promoções ativas.</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="category-filter-bar">
+                <button class="filter-btn active" data-category="todos">🔥 Todas as Ofertas</button>
+                <button class="filter-btn" data-category="tecnologia">💻 Tecnologia</button>
+                <button class="filter-btn" data-category="bebe">👶 Bebê</button>
+                <button class="filter-btn" data-category="beleza">✨ Beleza</button>
+            </div>
+
+            <!-- Deals Grid -->
+            <div class="deals-grid" id="deals-grid">
+
+                <!-- Deal 1: Tecnologia -->
+                <article class="deal-card" data-category="tecnologia">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">-70% OFF</span>
+                        <span class="badge-store shopee">Shopee</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"></path><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Tecnologia</span>
+                        <h3 class="deal-title">Fone de Ouvido Bluetooth TWS Com Cancelamento de Ruído Ativo</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 299,90</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 89,90</span>
+                            </div>
+                            <span class="coupon-tag">🎟️ Cupom: BUG70</span>
+                        </div>
+                        <a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Shopee">
+                            Pegar Cupom na Shopee
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Deal 2: Bebê -->
+                <article class="deal-card" data-category="bebe">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">-45% OFF</span>
+                        <span class="badge-store amazon">Amazon</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Bebê</span>
+                        <h3 class="deal-title">Kit Fraldas Pampers Supersec Tamanho G Mega - 160 Unidades</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 219,90</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 119,90</span>
+                            </div>
+                            <span class="coupon-tag">🎟️ Desconto no Checkout</span>
+                        </div>
+                        <a href="https://amazon.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Amazon">
+                            Ver Oferta na Amazon
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Deal 3: Beleza -->
+                <article class="deal-card" data-category="beleza">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">-60% OFF</span>
+                        <span class="badge-store mercadolivre">Mercado Livre</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Beleza</span>
+                        <h3 class="deal-title">Sérum Facial Vitamina C Anti-Idade Clareador Pure 30ml</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 149,90</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 59,90</span>
+                            </div>
+                            <span class="coupon-tag">🎟️ Cupom: BELEZAVIP</span>
+                        </div>
+                        <a href="https://mercadolivre.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Mercado Livre">
+                            Ver Oferta no Mercado Livre
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Deal 4: Tecnologia (Erro de Preço) -->
+                <article class="deal-card" data-category="tecnologia">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">🔥 BUG DE PREÇO</span>
+                        <span class="badge-store amazon">Amazon</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Tecnologia</span>
+                        <h3 class="deal-title">Smartwatch AMOLED com Oxímetro, GPS Integrado e Resistente à Água</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 450,00</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 179,00</span>
+                            </div>
+                            <span class="coupon-tag">⚡ Erro Detectado Há 10 min</span>
+                        </div>
+                        <a href="https://amazon.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Amazon">
+                            Garantir Erro na Amazon
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Deal 5: Bebê -->
+                <article class="deal-card" data-category="bebe">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">-44% OFF</span>
+                        <span class="badge-store mercadolivre">Mercado Livre</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Bebê</span>
+                        <h3 class="deal-title">Cadeira para Auto Reclinável 0 a 36kg Certificada pelo INMETRO</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 699,00</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 389,00</span>
+                            </div>
+                            <span class="coupon-tag">🎟️ Cupom: BABY2026</span>
+                        </div>
+                        <a href="https://mercadolivre.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Mercado Livre">
+                            Ver no Mercado Livre
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Deal 6: Beleza -->
+                <article class="deal-card" data-category="beleza">
+                    <div class="deal-card-header">
+                        <span class="badge-discount">-60% OFF</span>
+                        <span class="badge-store shopee">Shopee</span>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ee4d2d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <div class="deal-card-body">
+                        <span class="deal-category-tag">Beleza</span>
+                        <h3 class="deal-title">Kit Shampoo e Condicionador Reconstrução Profissional 1 Litro</h3>
+                        <div class="deal-price-box">
+                            <span class="price-original">De R$ 180,00</span>
+                            <div class="price-current-group">
+                                <span class="price-current">R$ 72,00</span>
+                            </div>
+                            <span class="coupon-tag">🎟️ Frete Grátis</span>
+                        </div>
+                        <a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer" class="btn-deal-cta" data-store="Shopee">
+                            Pegar Cupom na Shopee
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section (Netlify Forms) -->
+    <section class="lead-capture-section" id="alertas">
+        <div class="container">
+            <div class="capture-card">
+                <div class="capture-header">
+                    <div class="capture-icon-badge">📲</div>
+                    <h2 class="capture-title">Receba Alertas de Bugs e Cupons VIP no WhatsApp/E-mail</h2>
+                    <p class="capture-subtitle">Cadastre-se gratuitamente para receber em primeira mão alertas de erros de preço antes que os estoques esgotem!</p>
+                </div>
+
+                <!-- Netlify Form -->
+                <form name="alertas-vip" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="alertas-form">
+                    <!-- Hidden field required for Netlify Form processing -->
+                    <input type="hidden" name="form-name" value="alertas-vip" />
+                    
+                    <!-- Honeypot field for spam prevention -->
+                    <p style="display:none">
+                        <label>Não preencha este campo se for humano: <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="nome" class="form-label">Seu Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: Maria Silva" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Seu Melhor E-mail *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp" class="form-label">WhatsApp para Alertas Imediatos (Com DDD)</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" class="form-control" placeholder="(11) 99999-8888" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Selecione suas Categorias de Interesse *</label>
+                        <div class="category-checkbox-group">
+                            <label class="category-option">
+                                <input type="checkbox" name="categoria_tecnologia" value="Tecnologia" checked />
+                                <span class="category-label-card">💻 Tecnologia</span>
+                            </label>
+
+                            <label class="category-option">
+                                <input type="checkbox" name="categoria_bebe" value="Bebe" />
+                                <span class="category-label-card">👶 Bebê</span>
+                            </label>
+
+                            <label class="category-option">
+                                <input type="checkbox" name="categoria_beleza" value="Beleza" />
+                                <span class="category-label-card">✨ Beleza</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit-lead">
+                        🚀 Quero Receber Alertas VIP Grátis
+                    </button>
+
+                    <p class="form-disclaimer">
+                        🔒 Seus dados estão seguros. Não enviamos spam. Respeitamos nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+                    </p>
+                </form>
+
+                <!-- Success Message Display -->
+                <div class="form-success-message" id="form-success">
+                    <h4>🎉 Cadastro Realizado com Sucesso!</h4>
+                    <p>Você foi incluído na nossa lista VIP do <strong>@cacadores.de.bugs.e.erros</strong>. Fique atento às suas notificações para não perder nenhum erro de preço!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        🐞 Caçadores de <span class="highlight">Bugs e Erros</span>
+                    </a>
+                    <p class="footer-description">
+                        Curadoria diária independente das melhores promoções, cupons verificados e achados com erro de preço do e-commerce brasileiro.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Categorias Autorizadas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#ofertas">💻 Tecnologia & Eletrônicos</a></li>
+                        <li><a href="#ofertas">👶 Bebê & Maternidade</a></li>
+                        <li><a href="#ofertas">✨ Beleza & Cuidados Pessoais</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Links Úteis & Transparência</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#alertas">📲 Alertas VIP WhatsApp</a></li>
+                        <li><a href="politica-de-privacidade.html">📄 Política de Privacidade</a></li>
+                        <li><a href="politica-de-privacidade.html#afiliacao">🤝 Divulgação de Afiliados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Redes Oficiais</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 0.75rem;">Acompanhe nossas publicações e robôs de ofertas no Instagram:</p>
+                    <a href="https://instagram.com/cacadores.de.bugs.e.erros" target="_blank" rel="noopener noreferrer" class="footer-social-btn">
+                        📷 @cacadores.de.bugs.e.erros
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Caçadores de Bugs e Erros. Todos os direitos reservados.</p>
+                <div class="footer-legal-badge">
+                    <span>🛡️ Conformidade OAuth Pinterest & Marketing de Afiliados</span>
+                    <span>•</span>
+                    <a href="politica-de-privacidade.html" style="color: var(--accent-orange); text-decoration: underline;">Termos e Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
